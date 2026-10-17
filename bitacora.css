@@ -1,0 +1,183 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f7f0;
+    color: #26382b;
+    line-height: 1.6;
+}
+
+header {
+    background: #245c38;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c9f7a9;
+}
+
+.hero {
+    background: #dcefd6;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+
+.boton,
+button {
+    display: inline-block;
+    background: #287744;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 7px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.boton:hover,
+button:hover {
+    background: #194d2d;
+}
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+section {
+    margin-bottom: 45px;
+    scroll-margin-top: 20px;
+}
+
+section h2 {
+    margin-bottom: 12px;
+}
+
+.estadisticas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    box-shadow: 0 3px 10px #00000010;
+}
+
+.tarjeta h3 {
+    color: #287744;
+    font-size: 28px;
+}
+
+.plantas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.planta {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #39834c;
+    overflow-wrap: anywhere;
+}
+
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 500px;
+    box-shadow: 0 3px 10px #00000010;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5c0;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+footer {
+    background: #245c38;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+}
